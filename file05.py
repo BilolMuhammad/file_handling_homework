@@ -20,4 +20,4 @@ def main(data: str):
 
 # Read data from file
 file = 'txt_file/data05.txt'
-print(type(main(file)))
+print(main(file))
