@@ -10,7 +10,7 @@ def main(data: str):
     rd = file.read()
     list = []
     for r in rd:
-        if r.isalpha():
+        if not r.isdigit():
             list.append(r)
     return list
 
