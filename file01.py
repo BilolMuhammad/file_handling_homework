@@ -6,13 +6,14 @@ def main(data: str):
     Returns:
         list: return answer
     """
+    f = open(data)
     list = []
-    rd = data.read().split(',')
+    rd = f.read().split(',')
     for i in rd:
         list.append(int(i))
     return list
 
 
 # Read data from file
-f = open('txt_file/data01.txt', encoding='utf-8')
-print(type(main(data=f)[0]))
+link = "txt_file/data01.txt"
+print(main(link))
