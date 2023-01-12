@@ -6,8 +6,9 @@ def main(data: str):
     Returns:
         int: return answer
     """
-    f = open(data)
-    dt = f.read()
+    file = open(data)
+    dt = file.read()
+    file.close()
     return len(dt)
 
 
