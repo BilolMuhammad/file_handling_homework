@@ -7,13 +7,14 @@ def main(data: str):
         list: return answer
     """
     f = open(data, encoding='utf8')
-    r_list = f.read().split(',')
+    data = f.read()
+    r_list = data.split(',')
     list = []
-    for l in r_list:
-        list.append(int(l))
+    i = 0
+    for i in r_list:
+        b = int(i)
+        list.append(b)
     return list
-
-    return rd
 
 
 # Read data from file
