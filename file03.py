@@ -6,12 +6,12 @@ def main(data: str):
     Returns:
         list: return answer
     """
-    file = open(data)
+    file = open(data, encoding='utf-8')
     rd = file.read()
     list = []
     for l in rd:
         if l.isdigit():
-            list.append(int(l))
+            list.append(l)
 
     return list
 
