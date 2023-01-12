@@ -6,12 +6,14 @@ def main(data: str):
     Returns:
         list: return answer
     """
-    f = open(data)
+    f = open(data, encoding='utf8')
+    r_list = f.read().split(',')
     list = []
-    rd = f.read().split(',')
-    for i in rd:
-        list.append(int(i))
+    for l in r_list:
+        list.append(int(l))
     return list
+
+    return rd
 
 
 # Read data from file
