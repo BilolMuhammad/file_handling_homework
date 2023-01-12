@@ -11,7 +11,7 @@ def main(data: str):
     list = []
     for l in rd:
         if l.isdigit():
-            list.append(l)
+            list.append(int(l))
 
     return list
 
