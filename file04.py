@@ -1,4 +1,4 @@
-def main(data:str):
+def main(data: str):
     """
     The data is from the file. Return the str(non-digital) characters as a list type.
     Args:
@@ -6,5 +6,15 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    
+    file = open(data)
+    rd = file.read()
+    list = []
+    for r in rd:
+        if r.isalpha():
+            list.append(r)
+    return list
+
+
 # Read data from file
+link = 'txt_file/data04.txt'
+print(main(link))
