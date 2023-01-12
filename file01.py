@@ -15,4 +15,4 @@ def main(data: str):
 
 # Read data from file
 f = open('txt_file/data01.txt', encoding='utf-8')
-print(main(data=f))
+print(type(main(data=f)[0]))
