@@ -6,12 +6,11 @@ def main(data: str):
     Returns:
         int: return answer
     """
-    file = open(data)
-    dt = file.read()
-    file.close()
-    return len(dt)
+
+    return len(data)
 
 
-link = 'txt_file/data02.txt'
-print(main(link))
+file = open('txt_file/data02.txt')
+read = file.read()
+print(main(read))
 # Read data from file
