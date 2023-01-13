@@ -6,12 +6,11 @@ def main(data: str):
     Returns:
         list: return answer
     """
-    file = open(data)
-    rd = file.read().strip()
+
     num = 0
     nonnum = 0
-    for r in rd:
-        if r.isdigit():
+    for d in data:
+        if d.isdigit():
             num += 1
         else:
             nonnum += 1
@@ -19,5 +18,6 @@ def main(data: str):
 
 
 # Read data from file
-file = 'txt_file/data05.txt'
-print(main(file))
+file = open('txt_file/data05.txt')
+read = file.read()
+print(main(read))
