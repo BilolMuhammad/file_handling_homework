@@ -6,10 +6,9 @@ def main(data: str):
     Returns:
         list: return answer
     """
-    file = open(data, encoding='utf-8')
-    rd = file.read()
+
     list = []
-    for l in rd:
+    for l in data:
         if l.isdigit():
             list.append(int(l))
 
@@ -17,5 +16,6 @@ def main(data: str):
 
 
 # Read data from file
-link = 'txt_file/data03.txt'
-print(main(link))
+file = open('txt_file/data03.txt')
+read = file.read()
+print(main(read))
