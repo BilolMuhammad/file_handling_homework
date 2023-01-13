@@ -6,15 +6,15 @@ def main(data: str):
     Returns:
         int: return answer
     """
-    file = open(data)
-    rd = file.read()
+
     n_sum = 0
-    for r in rd:
-        if r.isdigit():
-            n_sum += int(r)
+    for d in data:
+        if d.isdigit():
+            n_sum += int(d)
     return n_sum
 
 
 # Read data from file
-link = 'txt_file/data07.txt'
-print(main(link))
+file = open('txt_file/data07.txt')
+read = file.read()
+print(main(read))
