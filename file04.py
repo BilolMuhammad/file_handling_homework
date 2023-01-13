@@ -6,15 +6,15 @@ def main(data: str):
     Returns:
         list: return answer
     """
-    file = open(data)
-    rd = file.read()
+
     list = []
-    for r in rd:
-        if not r.isdigit():
-            list.append(r)
+    for d in data:
+        if not d.isdigit():
+            list.append(d)
     return list
 
 
 # Read data from file
-link = 'txt_file/data04.txt'
-print(main(link))
+file = open('txt_file/data04.txt')
+read = file.read()
+print(main(read))
