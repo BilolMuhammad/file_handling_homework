@@ -6,16 +6,16 @@ def main(data: str):
     Returns:
         int: return answer
     """
-    file = open(data)
-    rd = file.read()
+
     max = 0
-    for r in rd:
-        if r.isdigit():
-            if int(r) > max:
-                max = int(r)
+    for d in data:
+        if d.isdigit():
+            if int(d) > max:
+                max = int(d)
     return max
 
 
 # Read data from file
-file = 'txt_file/data08.txt'
-print(main(file))
+file = open('txt_file/data08.txt')
+read = file.read()
+print(main(read))
