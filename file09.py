@@ -6,12 +6,11 @@ def main(data: str):
     Returns:
         int: return answer
     """
-    file = open(data)
-    rd = file.read()
+
     list = []
-    for r in rd:
-        if r.isnumeric():
-            list.append(int(r))
+    for d in data:
+        if d.isnumeric():
+            list.append(int(d))
     min = list[0]
     for l in list:
         if l < min:
@@ -20,5 +19,6 @@ def main(data: str):
 
 
 # Read data from file
-link = 'txt_file/data09.txt'
-print(main(link))
+file = open('txt_file/data09.txt')
+read = file.read()
+print(main(read))
