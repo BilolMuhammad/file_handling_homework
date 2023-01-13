@@ -7,7 +7,6 @@ def main(data: str):
         list: return answer
     """
 
-    data = data.read()
     r_list = data.split(',')
     list = []
     i = 0
@@ -19,4 +18,5 @@ def main(data: str):
 
 # Read data from file
 file = open("txt_file\data01.txt", encoding='utf-8')
-print(main(file))
+read = file.read()
+print(main(read))
